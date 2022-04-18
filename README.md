@@ -2,7 +2,7 @@ Developed by Carol Ávila to GuestCentric
 April 2022
 
 To run: 
-npm install
+npm install and open index.html on your browser
 
 Main goals:
 1. Green line animated
