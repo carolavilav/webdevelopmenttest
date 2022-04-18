@@ -1,0 +1,296 @@
+@font-face {
+    font-family: NoeDisplay;
+    src: url(./fonts/noe-display-regular.woff);
+}
+@font-face {
+    font-family: NoeDisplay;
+    src: url(./fonts/NoeDisplay-Black.woff);
+    font-weight: bold;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+html, body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color:black;
+    margin:0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    letter-spacing: 0.1em;
+}
+.line-container{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    text-align: center;
+    overflow:hidden;
+}
+svg {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+
+/* .path {
+    transform: rotate(90deg);
+    background: #C7E2D9;
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1000;
+  } */
+
+button{
+    font-family: 'Montserrat', sans-serif;
+}
+nav{
+    background-color:transparent;
+    box-shadow:none;
+    display: flex;
+    width: 100%;
+}
+.nav-wrapper{
+    margin: 10px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+.nav-wrapper a{
+    font-size: 12px;
+}
+#bookingButton {
+    background-color: #5A7F71;
+    color:white;
+    transition: 1s;
+    width: 130px;
+    height: 40px;
+    border: none;
+    font-weight: 300;
+    font-size: 13px;
+}
+#bookingButton:hover{
+    background-color: #2a3b34;
+}
+.nav-wrapper a:hover{
+    background-color: transparent;
+}
+
+.welcome{
+    height:750px;
+    background-image: linear-gradient(to bottom, rgb(4 14 19 / 65%), rgb(0 0 0 / 35%)),url(../img/_DSF7831.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    z-index: -1;
+}
+
+.mainText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+.mainText h3{
+    margin-top: -10px;
+    font-family: NoeDisplay;
+    font-weight: bold;
+}
+.mainText img{
+    transform: translateY(-240px);
+    transition: 1s ease;
+}
+.divider{
+    width: 90%;
+    border-style: none;
+    height:1px;
+    background-color: white;
+    transition: 1s ease;
+}
+
+.imgParallax{
+    background-image: url("../img/leafBG.png");
+    min-height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 100px;
+}
+.imgParallax .container{
+    position: relative;
+    top: -70px;
+}
+.imgParallax img{
+    width: 100%;
+}
+.card-panel{
+    position: absolute;
+    width: 30%;
+    margin-top: -235px;
+    margin-left: -37px;
+    background-color: #ffffffe6;
+}
+.container.about h1{
+    font-family: NoeDisplay;
+    font-weight: bold;
+    color:#294634;
+}
+
+.card-panel p{
+    font-size: 12px;
+}
+.titleColor{
+    position: relative;
+}
+.titleColor.container{
+    justify-content: center;
+    padding-left: 90px;
+    height: 0;
+}
+.titleColor.container p{
+    padding-left: 50px;
+    padding-top: 23px;
+}
+p{
+    font-size: 13px;
+}
+.changeColor{
+    position: absolute;
+    display: flex;
+    bottom: -12px;
+    top: -84px;
+}
+.changeColor h3{
+    font-family: NoeDisplay;
+    font-weight: bold;
+}
+.changeColor.lightColor{
+    color:#294634;
+}
+.changeColor.darkColor{
+    color:#C8DED0;
+    clip-path: inset(10px 0px 32px 0px);
+}
+.carousel{
+    height: 850px;
+    perspective: 300px;
+    margin-top:-80px;
+    z-index: 100;
+}
+.carousel .carousel-item{
+    width: 830px;
+}
+.carousel .carousel-item img{
+    width: 100%;
+    height: 400px;
+}
+#arrowButton{
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+    color: #5A7F71;
+}
+#arrowButton:hover{
+    transform: scale(10px);
+}
+.arrowArea{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    margin-top: -110px;
+}
+.container{
+    z-index: 1;
+}
+.lightTitle{
+    position: absolute;
+    opacity: 0.10;
+    font-size: 120px;
+    font-family: NoeDisplay;
+    font-weight: bold;
+}
+
+.containerText h5{
+    font-family: NoeDisplay;
+    font-weight: bold;
+    color: #294634;
+}
+.praias{
+    padding: 90px 0 100px 40px;
+}
+.vermais{
+    display: flex;
+    justify-content: flex-start;
+    width: 100px;
+    align-items: center;
+}
+.verMaisButton{
+    width: 70px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+    color:#5A7F71
+}
+.buttonLine{
+    width: 15px;
+    border-style: none;
+    height:2px;
+    background-color: #5A7F71;
+    transition: 1s ease;
+}
+
+.vermais:hover .buttonLine {
+    width: 30px;
+}
+
+button:focus{
+    background-color: transparent
+}
+footer{
+    background-color:#231F20;
+    background-image: url("../img/footerBG.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    color:white;
+    text-align: center;
+    font-size: 12px;
+}
+footer p {
+    line-height: 1.8;
+}
+
+.footerNav{
+    width: 600px;
+}
+.footerNav ul{
+    justify-content: space-between;
+    display: flex;
+}
+.footerNav a{
+    color: white;
+    cursor: pointer;
+}
+.socialMedia img{
+    margin: 25px 8px 5px 5px;
+}
